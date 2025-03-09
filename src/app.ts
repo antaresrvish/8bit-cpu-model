@@ -71,8 +71,12 @@ class processor implements CPU {
 
     clock(): void {
         console.log("CLK");
+        this.registers.A.clk = true;
+        this.registers.B.clk = true;
         this.processRegister('A');
         this.processRegister('B');
+        this.registers.A.clk = false;
+        this.registers.B.clk = false; 
     }
 
     reset(): void {
@@ -120,7 +124,7 @@ class processor implements CPU {
 
 const cpu = new processor();
 
-cpu.loadToBus(0b00000001);
+cpu.loadToBus(0b00000011);
 cpu.input('A');
 cpu.clock();
 
