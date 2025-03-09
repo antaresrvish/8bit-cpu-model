@@ -1,0 +1,24 @@
+{
+  "name": "8bit-cpu-model",
+  "version": "0.0.0",
+  "description": "An 8-bit CPU model built with TypeScript, designed for learning and experimentation with low-level computing concepts.",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antaresrvish/8bit-cpu-model.git"
+  },
+  "author": "antaresrvish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antaresrvish/8bit-cpu-model/issues"
+  },
+  "homepage": "https://github.com/antaresrvish/8bit-cpu-model#readme",
+  "dependencies": {
+    "typescript": "^5.8.2"
+  }
+}
